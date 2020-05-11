@@ -1,3 +1,3 @@
 # SCRUM
 
-What is scrum and how does it work?git pus
+What is scrum and how does it work?
