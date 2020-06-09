@@ -1,79 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>SCRUM</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <title>SCRUM</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Hangman</title>
+</head>
 <body>
-    <div>
-  <h1>Scrum!</h1>
-  <ol>
-    <li><a href="#SCRUM">What is scrum?</a></li>
-    <li><a href="#SPRINT">What is a sprint?</a></li>
-    <li><a href="#BACKLOG">What is a backlog?</a></li>
-    <li><a href="#SPRINT REVIEW">What is a sprint review?</a></li>
-      <li><a href="#STANDUP">What is a standup?</a></li>
-      <li><a href="#SCRUMMA">What is a scrum master?</a></li>
-      <li><a href="#RETRO">What is a retrospective?</a>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    <p>Guess the Programming Language:</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+</div>
 
-      
-  </ol>
-
-    
-    <p id="SCRUM">What is scrum?</p>
-
-    <p>Scrum is a project management framework of agile that helps with teamwork it is used to develop, deliver and sustain products. Scrum and agile are often used interchangeably however this is wrong due to the fact that scrum is a framework for getting things done and constantly shipping value to customers while agile is just a set of values and principles basically a way of thinking. Scrum is the methodology and how you would implement agile ways of thinking and practices.
-        Scrum software is built in a series of iterations called sprints where large projects are broken down into small and manageable pieces.</p> 
-
-        <p id="SPRINT">What is a sprint? </p>
- 
-        <p>A sprint is a short, time-boxed period when a scrum team works to complete a set amount of work.</p>
-       
-        <p>Sprint planning is a collaborative effort of teams to work together and answer two basic questions. What work can get done in this sprint and how will the chosen work get done?
-            The right work is chosen by the product owner, scrum master and the development team.
-            The product owner decides what path the development process should take and what the final product should look like. The dev team then creates a plan for how they will create backlog items and get them done. The work items chosen and the plan for how to get them done is called the sprint backlog. 
-            
-            During a sprint teams check during their daily scrum/standup and discuss how the work is progressing. The objective of such a meeting is to identify any blockers that would hinder the team's ability to deliver on the sprint goal. After a sprint the team showcases what they have completed during the sprint review. This process finally completed during the sprint retrospective where the team reflects on areas where improvements could be made for the next sprint.
-            </p>
-
-         <p id="BACKLOG">What is a backlog?</p>
-
-         <p>A product backlog is a priorities list of work for the development team that is dervied from the roadmap and its requirments. The most improtant items are shown at the top of the product backlog so the team knows what to deliver first. The development team doesn't work through the backlog at the product owners pace and the product owner isn't pushing work to the development team. Instead, the development team pulls work from the product backlog as there is capacity for it, either continually kanban or by iteration scrum.</p>
-
-         <p id="SPRINT REVIEW">What is a sprint review?</p>
-
-         <p>Sprint reviews are not retrospectives. A sprint review is about demonstrating the hard work of the entire team: designers, developers, and the product owner. At Atlassian we like to keep our sprint reviews casual. Team members gather around a desk for informal demos and describe the work they’ve done for that iteration. It’s a time to ask questions, try new features, and give feedback. Sharing in success is an important part of building an agile team.</p>
-
-         <p id="STANDUP">What are standups?</p>
-
-         <p>In many sports like (American) football and rugby, the team huddles before each play. The huddle is strategic: it keeps the team informed, connected, and calibrated throughout the game. For software teams, the stand-up is like the team’s huddle. It’s even commonly known as the daily scrum, and reinforces “we” to keep everyone aware of the team’s landscape and progress.</p>
-
-         <p id="SCRUMMA">What is a scrum master?</p>
-
-         <p>Scrum masters are the facilitators of scrum, the lightweight agile framework with a focus on time-boxed iterations called sprints. As facilitators, scrum masters act as coaches to the rest of the team. “Servant leaders” as the Scrum Guide puts it. Good scrum masters are committed to the scrum foundation and values, but remain flexible and open to opportunities for the team to improve their workflow</p>
-
-         <p id="RETRO">What is a retrospective</p>
-
-         <p>The Sprint Retrospective occurs after the Sprint Review and prior to the next Sprint Planning. This is at most a three-hour meeting for one-month Sprints. For shorter Sprints, the event is usually shorter. The Scrum Master ensures that the event takes place and that attendants understand its purpose. This is the opportunity for the Scrum Team to improve and all member should be in attendance.</p>
-         
-         <table>
-          <th>SCRUM</th>
-          <tr>Scrum teams commit to ship working software through set intervals called sprints. Their goal is to create learning loops to quickly gather and integrate customer feedback. Scrum teams adopt specific roles, create special artifacts, and hold regular ceremonies to keep things moving forward. Scrum is best defined in The Scrum Guide.</tr>
-          <th>KANBAN</th>
-          <tr>Kanban is all about visualizing your work, limiting work in progress, and maximizing efficiency(or flow). Kanban teams focus on reducing the time it takes to take a project(or user story) from start to finish. They do this by using a kanban board and continuously improving their flow of work.</tr>
-      
-        </table> 
-        
-        </div>
-
-        
-           
-           
-            <script src="script.js"></script>
-
-
-  </body>
+<script src='./js/hangman.js'></script>
+</body>
 </html>
